@@ -4,8 +4,22 @@ namespace MoodAnalyzer
 {
     public  class MoodAnalyzerProblem
     {
-        public String Mood(string message)
+        string message;
+        public MoodAnalyzerProblem()
         {
+
+        }
+        public MoodAnalyzerProblem(String message)
+        {
+            this.message = message;
+        }
+        public string  Mood(String message)
+        {
+            this.message = message;
+            return Mood();
+        }
+        public String Mood()
+        { 
             if (message.Contains("I am in sad mood"))
             {
                 return "SAD";
