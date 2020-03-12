@@ -19,16 +19,24 @@ namespace MoodAnalyzer
             return Mood();
         }
         public String Mood()
-        { 
-            if (message.Contains("I am in sad mood"))
+        {
+            try
             {
-                return "SAD";
+                if (message.Contains("I am in sad mood"))
+                {
+                    return "SAD";
+                }
+                else
+                {
+                    return "HAPPY";
+                }
             }
-            else
+            catch (NullReferenceException Null)
             {
-                return "HAPPY";
+                Console.WriteLine(Null);
+                return "Invali Mood";
+               
             }
-
         }
          static void Main(string[] args)
          {

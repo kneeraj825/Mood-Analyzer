@@ -36,6 +36,13 @@ namespace MoodAnalyzerTestCase
             string result = moodanalyzerproblem.Mood();
             Assert.AreEqual(result, "HAPPY");
         }
+        [Test]
+        public void Exception_Invalid()
+        { 
+            var moodanalyzerproblem = new MoodAnalyzerProblem(null);
+            string result = moodanalyzerproblem.Mood();
+            Assert.AreEqual(result, "Invali Mood");
+        }
     }  
 
 }
