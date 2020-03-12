@@ -28,6 +28,14 @@ namespace MoodAnalyzerTestCase
             string result = moodanalyzerproblem.Mood();
             Assert.AreEqual(result, "SAD");
         }
+        [Test]
+        public void No_Parameter_Happy()
+        {
+            String messgae = "I am in happy mood";
+            var moodanalyzerproblem = new MoodAnalyzerProblem(messgae);
+            string result = moodanalyzerproblem.Mood();
+            Assert.AreEqual(result, "HAPPY");
+        }
     }  
 
 }
