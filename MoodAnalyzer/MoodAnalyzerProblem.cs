@@ -2,11 +2,11 @@
 
 namespace MoodAnalyzer
 {
-    class MoodAnalyzerProblem
+    public  class MoodAnalyzerProblem
     {
         public String Mood(string message)
         {
-            if (message.Contains("sad"))
+            if (message.Contains("I am in sad mood"))
             {
                 return "SAD";
             }
@@ -16,12 +16,11 @@ namespace MoodAnalyzer
             }
 
         }
-
-        static void Main(string[] args)
-        {
+         static void Main(string[] args)
+         {
             Console.WriteLine("Welcome to Mood Analyzer Problem");
             MoodAnalyzerProblem moodanalyse = new MoodAnalyzerProblem();
             moodanalyse.Mood("HAPPY");
-        }
+         }
     }
 }
