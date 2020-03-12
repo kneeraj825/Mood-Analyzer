@@ -34,7 +34,7 @@ namespace MoodAnalyzer
             catch (NullReferenceException Null)
             {
                 Console.WriteLine(Null);
-                return "Invali Mood";
+                return "HAPPY";
                
             }
         }
