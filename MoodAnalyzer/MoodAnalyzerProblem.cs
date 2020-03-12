@@ -4,7 +4,7 @@ namespace MoodAnalyzer
 {
     public  class MoodAnalyzerProblem
     {
-        string message;
+        String message;
         public MoodAnalyzerProblem()
         {
 
